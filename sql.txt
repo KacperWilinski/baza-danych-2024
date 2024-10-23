@@ -1,0 +1,3 @@
+create table postac(id postaci INTEGER primary key auto_increment, nazwa VARCHAR(40) rodzaj ENUM('wiking, ptak, kobieta'), data_ur DATE, wiek INT);
+INSERT INTO postac (nazwa, rodzaj, data_ur, wiek) VALUES ('bjorn', 'wiking', '1980-10-10', 44), ('drozd', 'ptak', '2020-10-10', 4), ('tesciowa, 'kobieta', '1936-10-10', 87)
+UPDATE postac SET wiek = 88 WHERE nazwa = 'tesciowa';
